@@ -1,0 +1,311 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header section start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h2 {
+    font-size: 45px;
+}
+
+.text-primary {
+    color: #FD6E0A;
+
+}
+
+.back-primary {
+    background-color: #FD6E0A;
+    color: white;
+    padding: 15px 30px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact-me {
+    background: #FFF8F3;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    padding: 15px 25px;
+    color: #FD6E0A;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header {
+    background-repeat: no-repeat;
+
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    justify-content: space-between;
+    background-color: #FFF8F3;
+
+
+
+}
+
+header .imge {
+    position: absolute;
+    left: 0;
+    top: 55px;
+}
+
+
+.banner-content {
+    padding: 30px 20px 30px 150px;
+
+}
+
+.banner-content h3 {
+    font-weight: 100;
+    font-size: 45px;
+    margin-bottom: 0;
+    color: #474747;
+}
+
+.anower {
+
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #181818;
+}
+
+.banner-content p {
+    font-size: 18px;
+    color: #757575;
+    text-align: start;
+}
+
+.banner .img-hardy {
+    width: 584px;
+    height: 676px;
+
+}
+
+/* header section end */
+
+/* main section  start*/
+
+/* about me */
+
+
+main {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-me {
+    padding: 130px 150px;
+    background-color: #FFF8F3;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.about-me-header {
+    color: #181818;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about-me-description {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+
+.about-me-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-information-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.about-me-information-desc {
+    color: #474747;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* what i do  */
+
+.skills-container {
+    display: flex;
+    text-align: start;
+    gap: 25px;
+    margin-top: 50px;
+
+}
+
+.skills {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+
+.skills-header {
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skills-description {
+    color: #757575;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+/* My resume */
+.Resume h1 {
+    color: #181818;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 130px;
+    margin-bottom: 113px;
+}
+
+.my-resume {
+    display: flex;
+    text-align: start;
+    gap: 70px;
+}
+
+.education h4 {
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.certificate-title {
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.institute {
+    color: #757575;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.certificate-desc {
+    color: #757575;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+.horizental {
+    color: #D1D1D1;
+    width: 550px;
+    height: 1px;
+    margin: 30px 0;
+}
+
+.download-cv {
+    margin-top: 50px;
+    margin-bottom: 113px;
+}
+/* main section  end*/
+
+
+/* footer section */
+footer {
+    display: flex;
+    background-color: #FFF8F3;
+}
+
+.lets {
+    padding-left: 230px;
+    margin-right: 120px;
+}
+
+
+
+.let-header, .form-header {
+    color: #181818;
+    text-align: start;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.let-desc {
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.icon{margin-right:20px ;}
+
+.form {
+   
+    padding-right: 230px;
+}
+
+input, textarea{
+    display: block;
+    padding: 18px 30px;
+    border:none;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+#name,
+#email {
+    width:300px;
+    height: 30px;
+}
