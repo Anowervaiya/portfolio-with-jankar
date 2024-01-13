@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+
 }
 
 /* Header section start */
@@ -26,7 +27,7 @@ nav li a {
 }
 
 nav h2 {
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 .text-primary {
@@ -68,6 +69,7 @@ header {
     background-position: bottom right;
     justify-content: space-between;
     background-color: #FFF8F3;
+    flex: 1;
 
 
 
@@ -94,7 +96,7 @@ header .imge {
 
 .anower {
 
-    font-size: 80px;
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
     color: #181818;
@@ -107,8 +109,8 @@ header .imge {
 }
 
 .banner .img-hardy {
-    width: 584px;
-    height: 676px;
+    width: 100%;
+
 
 }
 
@@ -120,22 +122,23 @@ header .imge {
 
 
 main {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
+    /* width: 70%; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
 }
 
 .about-me {
     padding: 130px 150px;
     background-color: #FFF8F3;
     margin-top: 20px;
-    margin-bottom: 130px;
+
 }
 
 .about-me-header {
     color: #181818;
     font-size: 35px;
     font-weight: 700;
+
 }
 
 .about-me-description {
@@ -148,8 +151,9 @@ main {
 
 
 .about-me-info {
-    display: flex;
+    display: grid;
     justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .about-me-information-title {
@@ -168,12 +172,19 @@ main {
 }
 
 /* what i do  */
+.what-i-do {
+    margin-bottom: 50px;
+    padding: 130px 150px;
+}
 
 .skills-container {
-    display: flex;
+    display: grid;
     text-align: start;
     gap: 25px;
     margin-top: 50px;
+
+    grid-template-columns: repeat(4, 1fr);
+
 
 }
 
@@ -201,11 +212,15 @@ main {
 }
 
 /* My resume */
+.Resume {
+    padding: 100px;
+}
+
 .Resume h1 {
     color: #181818;
     text-align: center;
     font-family: Open Sans;
-    font-size: 35px;
+    font-size: 1.5em;
     font-weight: 700;
     margin-top: 130px;
     margin-bottom: 113px;
@@ -214,36 +229,36 @@ main {
 .my-resume {
     display: flex;
     text-align: start;
-    gap: 70px;
+    gap: 20px;
 }
 
 .education h4 {
     color: #474747;
     font-family: Open Sans;
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 700;
 }
 
 .certificate-title {
     color: #474747;
     font-family: Open Sans;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
 .institute {
     color: #757575;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
 .certificate-desc {
     color: #757575;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 2rem;
 
 }
 
@@ -258,6 +273,7 @@ main {
     margin-top: 50px;
     margin-bottom: 113px;
 }
+
 /* main section  end*/
 
 
@@ -265,21 +281,27 @@ main {
 footer {
     display: flex;
     background-color: #FFF8F3;
+    width: 100%;
 }
 
-.lets {
-    padding-left: 230px;
-    margin-right: 120px;
+.lets,
+.form {
+    margin: 0 30px;
 }
 
 
-
-.let-header, .form-header {
+.let-header,
+.form-header {
     color: #181818;
     text-align: start;
     font-family: Open Sans;
-    font-size: 35px;
+    font-size: 1em;
     font-weight: 700;
+    text-align: center;
+}
+
+.form-header {
+    text-align: left;
 }
 
 .let-desc {
@@ -289,23 +311,272 @@ footer {
     font-weight: 400;
     line-height: 28px;
 }
-.icon{margin-right:20px ;}
 
-.form {
-   
-    padding-right: 230px;
+.icon-all {
+    text-align: center;
 }
 
-input, textarea{
+.icon {
+    margin-right: 20px;
+}
+
+
+
+input,
+textarea {
     display: block;
     padding: 18px 30px;
-    border:none;
+    border: none;
     margin: 25px 0;
     border-radius: 5px;
 }
 
 #name,
 #email {
-    width:300px;
+    width: 60%;
     height: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    footer,
+    .my-resume,
+    nav,
+    nav>ul,
+    .banner {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* header section  */
+    nav ul li a {
+        margin: 20px 0;
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        border-radius: 100px;
+        background-color: gray;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+
+
+    .imge {
+        display: none;
+    }
+
+    .banner-content {
+        padding: 10px;
+    }
+
+    .banner {
+        background-image: none;
+    }
+
+    .banner-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .img-hardy {
+        width: 50%;
+        display: none;
+    }
+
+    .imge {
+        display: none;
+    }
+
+    /* footer section  */
+    #name,
+    #email {
+        width: 65%;
+    }
+
+    .let-header,
+    .form-header {
+        text-align: center;
+    }
+
+    .form {
+        margin: 0 auto;
+    }
+
+    /* main section  */
+    .about-me {
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-me-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .what-i-do,
+    .Resume {
+        padding: 10px;
+    }
+
+    .what-i-do-heading {
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .horizental {
+        width: auto;
+    }
+
+    .download-cv {
+        text-align: center;
+
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+
+    nav,
+    nav>ul,
+    .banner {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 40px;
+    }
+
+
+    nav ul li a {
+        margin: 20px 0;
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        border-radius: 100px;
+        background-color: gray;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .imge {
+        display: none;
+    }
+
+
+    .banner {
+        background-image: none;
+    }
+
+    .banner-content {
+        padding: 10px;
+    }
+
+    /* main section  */
+    .about-me-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .about-me {
+        text-align: center;
+        padding: 0;
+    }
+
+    .what-i-do {
+        padding: 10px;
+    }
+
+    .what-i-do-heading {
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr)
+    }
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1120px) {
+
+    /* header section  */
+    nav,
+    nav>ul,
+    .banner {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 40px;
+    }
+
+
+    nav ul li a {
+        margin: 20px 0;
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        border-radius: 100px;
+        background-color: gray;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+
+    .banner {
+        background-image: none;
+    }
+
+    .banner-content {
+        padding: 10px;
+    }
+
+
+    .imge {
+        display: none;
+    }
+
+    /* main section  */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr)
+    }
+
+
+
+
 }
