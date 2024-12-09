@@ -84,6 +84,11 @@ header .imge {
 
 .banner-content {
     padding: 30px 20px 30px 150px;
+     display: flex;
+    align-items: center;
+    
+       justify-content: space-between;
+    
 
 }
 
